@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main2"
+    tools:context="com.example.artests.l15anim.Main2Activity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idSky"
+        android:contentDescription="@string/sky"
+        android:src="@drawable/sky"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idSun"
+        android:contentDescription="@string/sun"
+        android:src="@drawable/sun"
+        android:layout_alignTop="@+id/idSky"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/grassHeight"
+        android:id="@+id/idGrass"
+        android:contentDescription="@string/grass"
+        android:src="@drawable/grass"
+        android:layout_alignBottom="@+id/idSky"
+        android:layout_alignLeft="@+id/idSky"
+        android:layout_alignStart="@+id/idSky" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clock"
+        android:layout_alignTop="@+id/idGrass"
+        android:layout_alignRight="@+id/idSky"
+        android:layout_alignEnd="@+id/idSky"
+        android:src="@drawable/clock"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clockH"
+        android:layout_alignTop="@+id/idGrass"
+        android:layout_alignRight="@+id/idSky"
+        android:layout_alignEnd="@+id/idSky"
+        android:src="@drawable/clock_hour"
+        android:layout_alignBottom="@+id/clock" />
+
+</RelativeLayout>
